@@ -10,7 +10,7 @@
           "value": "http"
         }
       ],
-      "destination": "https://critiplot.vercel.app/sitemap.xml",
+      "destination": "https://critiplot.github.io/sitemap.xml",
       "permanent": true
     },
     {
@@ -22,7 +22,7 @@
           "value": "http"
         }
       ],
-      "destination": "https://critiplot.vercel.app/sitemap.txt",
+      "destination": "https://critiplot.github.io/sitemap.txt",
       "permanent": true
     }
   ],

@@ -1,8 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://critiplot.vercel.app/</loc>
+    <loc>https://critiplot.github.io/</loc>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://critiplot.github.io/assets/preview1.png</image:loc>
+      <image:title>Critiplot risk of bias traffic light plot example</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://critiplot.github.io/example/result.png</image:loc>
+      <image:title>Critiplot NOS figure</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://critiplot.github.io/example/grade_result1.png</image:loc>
+      <image:title>Critiplot GRADE figure</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://critiplot.github.io/example/robis_result1.png</image:loc>
+      <image:title>Critiplot ROBIS figure</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://critiplot.github.io/example/case_report2.png</image:loc>
+      <image:title>Critiplot JBI case report figure</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://critiplot.github.io/example/series_plot.png</image:loc>
+      <image:title>Critiplot JBI case series figure</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://critiplot.github.io/example/MMAT1.png</image:loc>
+      <image:title>Critiplot MMAT figure</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://critiplot.github.io/example/Screenshot1.png</image:loc>
+      <image:title>Critiplot user interface</image:title>
+    </image:image>
   </url>
 </urlset>
