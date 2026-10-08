@@ -1,3 +1,6 @@
+# Front-end for the Critiplot
+
+---
 
 
 🔗 **Interactive web app:** [critiplot.vercel.app](https://critiplot.vercel.app)

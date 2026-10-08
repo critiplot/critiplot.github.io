@@ -1,0 +1,59 @@
+{
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/sitemap.xml",
+      "has": [
+        {
+          "type": "header",
+          "key": "x-forwarded-proto",
+          "value": "http"
+        }
+      ],
+      "destination": "https://critiplot.vercel.app/sitemap.xml",
+      "permanent": true
+    },
+    {
+      "source": "/sitemap.txt",
+      "has": [
+        {
+          "type": "header",
+          "key": "x-forwarded-proto",
+          "value": "http"
+        }
+      ],
+      "destination": "https://critiplot.vercel.app/sitemap.txt",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/sitemap.xml",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/xml"
+        }
+      ]
+    },
+    {
+      "source": "/sitemap-:path*.xml",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/xml"
+        }
+      ]
+    },
+    {
+      "source": "/sitemap.txt",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/plain"
+        }
+      ]
+    }
+  ],
+  "cleanUrls": false
+}
