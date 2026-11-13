@@ -343,6 +343,11 @@
     footer .footer-center {
       text-align: center;
       flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
     }
     
     footer .footer-right {
@@ -439,7 +444,7 @@
       background: #2980b9;
     }
     
-    .python-package {
+    .python-package, .r-package {
       background: linear-gradient(to right, #f8fafc, #edf2f7);
       border-radius: 12px;
       padding: 2rem;
@@ -449,12 +454,12 @@
       border-bottom: 4px solid var(--accent-color);
     }
     
-    .python-package h3 {
+    .python-package h3, .r-package h3 {
       color: var(--primary-color);
       margin-top: 0;
     }
     
-    .python-package pre {
+    .python-package pre, .r-package pre {
       background: var(--primary-color);
       color: white;
       padding: 1.25rem;
@@ -465,25 +470,25 @@
       box-shadow: var(--shadow-md);
     }
     
-    .python-package code {
+    .python-package code, .r-package code {
       font-family: 'Roboto Mono', monospace;
     }
     
-    .python-package p {
+    .python-package p, .r-package p {
       margin-bottom: 1rem;
     }
     
-    .python-package ul {
+    .python-package ul, .r-package ul {
       margin-top: 1rem;
     }
     
-    .python-package a {
+    .python-package a, .r-package a {
       color: var(--accent-color);
       text-decoration: none;
       font-weight: 500;
     }
     
-    .python-package a:hover {
+    .python-package a:hover, .r-package a:hover {
       color: var(--secondary-color);
       text-decoration: underline;
     }

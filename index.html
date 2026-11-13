@@ -720,6 +720,33 @@
         You can <a href="https://github.com/aurumz-rgb/Critiplot-main/issues" target="_blank">open a GitHub Issue</a> or <a href="mailto:pteroisvolitans12@gmail.com">send an email</a> directly for guidance, troubleshooting, or feature requests.
       </p>
     </section>
+     <section class="r-package">
+      <h3><i class="fab fa-r-project"></i> R Package</h3>
+      <p>
+        Critiplot is also available as <strong>critiplotR</strong>, an R package that brings the same
+        publication-ready risk-of-bias and certainty-of-evidence plots into R workflows. Install the
+        development version from GitHub:
+      </p>
+      <pre><code># install.packages("pak")
+pak::pak("critiplot/critiplotR")</code></pre>
+      <p>
+        <strong>critiplotR</strong> supports the Newcastle-Ottawa Scale (NOS), the JBI critical appraisal
+        checklists for case reports and case series, GRADE certainty of evidence, ROBIS, and the Mixed
+        Methods Appraisal Tool (MMAT). It reads data frames or <code>.csv</code>, <code>.xls</code>, and
+        <code>.xlsx</code> files and writes PNG, PDF, SVG, and EPS output.
+      </p>
+      <ul>
+        <li>Integrate Critiplot plots into R Markdown and Quarto documents</li>
+        <li>Automate figure generation across many assessments and datasets</li>
+        <li>Use the same frameworks and colour themes as the Python and interactive versions</li>
+        <li>Powered by the Python <code>critiplot</code> engine through <code>reticulate</code></li>
+      </ul>
+      <p>
+        For documentation and examples, visit the
+        <a href="https://critiplot.github.io/critiplotR/" target="_blank">critiplotR pkgdown website</a>
+        or the <a href="https://github.com/critiplot/critiplotR" target="_blank">GitHub repository</a>.
+      </p>
+    </section>
      <section class="python-package">
       <h3><i class="fab fa-python"></i> Python Package</h3>
       <p>
@@ -770,6 +797,7 @@
   </div>
   <div class="footer-center">
     <a href="https://pypi.org/project/critiplot/" target="_blank"><i class="fab fa-python"></i> PyPI Package</a>
+    <a href="https://critiplot.github.io/critiplotR/" target="_blank"><i class="fab fa-r-project"></i> critiplotR Package</a>
   </div>
   <div class="footer-right">
     <a href="https://github.com/aurumz-rgb/Critiplot-main" target="_blank"><i class="fab fa-github"></i> GitHub Repository</a>
