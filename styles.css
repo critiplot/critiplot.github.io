@@ -492,6 +492,22 @@
       color: var(--secondary-color);
       text-decoration: underline;
     }
+
+    .r-package img {
+      display: block;
+      width: 100%;
+      max-width: 920px;
+      margin: 1.5rem auto;
+      border-radius: 8px;
+      box-shadow: var(--shadow-md);
+    }
+
+    .r-package .img-caption {
+      text-align: center;
+      color: var(--gray-color);
+      font-size: 0.95rem;
+      margin-top: -0.75rem;
+    }
     
     @media (max-width: 768px) {
       header h1 {

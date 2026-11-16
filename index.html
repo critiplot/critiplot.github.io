@@ -724,17 +724,22 @@
       <h3><i class="fab fa-r-project"></i> R Package</h3>
       <p>
         Critiplot is also available as <strong>critiplotR</strong>, an R package that brings the same
-        publication-ready risk-of-bias and certainty-of-evidence plots into R workflows. Install the
-        development version from GitHub:
+        publication-ready risk-of-bias and certainty-of-evidence plots into R workflows. Install it
+        from CRAN:
       </p>
-      <pre><code># install.packages("pak")
-pak::pak("critiplot/critiplotR")</code></pre>
+      <pre><code>install.packages("critiplotR")
+
+# or the development version from GitHub:
+# install.packages("pak")
+# pak::pak("critiplot/critiplotR")</code></pre>
       <p>
         <strong>critiplotR</strong> supports the Newcastle-Ottawa Scale (NOS), the JBI critical appraisal
         checklists for case reports and case series, GRADE certainty of evidence, ROBIS, and the Mixed
         Methods Appraisal Tool (MMAT). It reads data frames or <code>.csv</code>, <code>.xls</code>, and
         <code>.xlsx</code> files and writes PNG, PDF, SVG, and EPS output.
       </p>
+        <img src="assets/critiplotr-demo-nos.png" alt="Running plot_nos() from the critiplotR R package in an R session: the console calls and the resulting Newcastle-Ottawa Scale traffic-light plot and stacked bar chart">
+        <p class="img-caption">A live R session using <code>plot_nos()</code> from <strong>critiplotR</strong> — the console calls (top) and the resulting traffic-light plot and stacked bar chart (bottom).</p>
       <ul>
         <li>Integrate Critiplot plots into R Markdown and Quarto documents</li>
         <li>Automate figure generation across many assessments and datasets</li>
