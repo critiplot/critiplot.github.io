@@ -444,51 +444,53 @@
       background: #2980b9;
     }
     
-    .python-package, .r-package {
-      background: linear-gradient(to right, #f8fafc, #edf2f7);
+    .package-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.25rem;
+      margin-top: 1.5rem;
+    }
+    
+    .package-card {
+      background: #f8fafc;
       border-radius: 12px;
-      padding: 2rem;
-      margin-top: 2rem;
-      box-shadow: var(--shadow-md);
-      border-right: 4px solid var(--accent-color);
-      border-bottom: 4px solid var(--accent-color);
+      padding: 1.5rem;
+      box-shadow: var(--shadow-sm);
     }
     
-    .python-package h3, .r-package h3 {
+    .package-card h3 {
       color: var(--primary-color);
-      margin-top: 0;
+      font-size: 1.15rem;
+      margin: 0 0 1rem;
     }
     
-    .python-package pre, .r-package pre {
+    .package-card pre {
       background: var(--primary-color);
       color: white;
-      padding: 1.25rem;
+      padding: 0.9rem 1rem;
       border-radius: 8px;
       overflow-x: auto;
       font-family: 'Roboto Mono', monospace;
-      margin: 1.5rem 0;
-      box-shadow: var(--shadow-md);
+      font-size: 0.82rem;
+      margin: 0 0 1rem;
     }
     
-    .python-package code, .r-package code {
+    .package-card code {
       font-family: 'Roboto Mono', monospace;
     }
     
-    .python-package p, .r-package p {
-      margin-bottom: 1rem;
+    .package-card p {
+      font-size: 0.95rem;
+      margin: 0;
     }
     
-    .python-package ul, .r-package ul {
-      margin-top: 1rem;
-    }
-    
-    .python-package a, .r-package a {
+    .package-card a {
       color: var(--accent-color);
       text-decoration: none;
       font-weight: 500;
     }
     
-    .python-package a:hover, .r-package a:hover {
+    .package-card a:hover {
       color: var(--secondary-color);
       text-decoration: underline;
     }
@@ -507,6 +509,12 @@
       color: var(--gray-color);
       font-size: 0.95rem;
       margin-top: -0.75rem;
+    }
+    
+    .package-note {
+      margin-top: 1.25rem;
+      font-size: 0.95rem;
+      color: var(--gray-color);
     }
     
     @media (max-width: 768px) {

@@ -101,7 +101,7 @@
     "Supports JBI (Joanna Briggs Institute) for Case Reports and Series",
     "Supports MMAT (Mixed Methods Appraisal Tool)",
     "Publication-ready visualizations for manuscripts",
-    "Available as a web app and Python package"
+    "Available as a web app, Python package (PyPI and conda-forge), and R package"
   ],
   "offers": {
     "@type": "Offer",
@@ -164,7 +164,9 @@
   "sameAs": [
     "https://github.com/aurumz-rgb/Critiplot-main",
     "https://doi.org/10.5281/zenodo.17236600",
-    "https://pypi.org/project/critiplot/"
+    "https://pypi.org/project/critiplot/",
+    "https://anaconda.org/conda-forge/critiplot",
+    "https://cran.r-project.org/package=critiplotR"
   ]
 }
 </script>
@@ -720,58 +722,46 @@
         You can <a href="https://github.com/aurumz-rgb/Critiplot-main/issues" target="_blank">open a GitHub Issue</a> or <a href="mailto:pteroisvolitans12@gmail.com">send an email</a> directly for guidance, troubleshooting, or feature requests.
       </p>
     </section>
-     <section class="r-package">
-      <h3><i class="fab fa-r-project"></i> R Package</h3>
+    <section class="packages">
+      <h2><i class="fas fa-box-open"></i> Packages</h2>
       <p>
-        Critiplot is also available as <strong>critiplotR</strong>, an R package that brings the same
-        publication-ready risk-of-bias and certainty-of-evidence plots into R workflows. Install it
-        from CRAN:
+        Critiplot is available for Python and R, with the same data templates, themes, and output formats.
       </p>
-      <pre><code>install.packages("critiplotR")
-
-# or the development version from GitHub:
-# install.packages("pak")
-# pak::pak("critiplot/critiplotR")</code></pre>
-      <p>
-        <strong>critiplotR</strong> supports the Newcastle-Ottawa Scale (NOS), the JBI critical appraisal
-        checklists for case reports and case series, GRADE certainty of evidence, ROBIS, and the Mixed
-        Methods Appraisal Tool (MMAT). It reads data frames or <code>.csv</code>, <code>.xls</code>, and
-        <code>.xlsx</code> files and writes PNG, PDF, SVG, and EPS output.
-      </p>
+      <div class="package-grid">
+        <div class="package-card">
+          <h3><i class="fab fa-python"></i> Python</h3>
+          <pre><code>pip install critiplot</code></pre>
+          <p><a href="https://pypi.org/project/critiplot/" target="_blank">PyPI</a> · <a href="https://github.com/aurumz-rgb/Critiplot-Package" target="_blank">Documentation</a></p>
+        </div>
+        <div class="package-card">
+          <h3><i class="fas fa-cube"></i> conda-forge</h3>
+          <pre><code>conda install conda-forge::critiplot</code></pre>
+          <p><a href="https://anaconda.org/conda-forge/critiplot" target="_blank">Anaconda page</a> · Python package</p>
+        </div>
+        <div class="package-card">
+          <h3><i class="fab fa-r-project"></i> R</h3>
+          <pre><code>install.packages("critiplotR")</code></pre>
+          <p><a href="https://critiplot.github.io/critiplotR/" target="_blank">Documentation</a> · <a href="https://github.com/critiplot/critiplotR" target="_blank">GitHub</a></p>
+        </div>
+      </div>
+      <div class="r-package">
         <img src="assets/critiplotr-demo-nos.png" alt="Running plot_nos() from the critiplotR R package in an R session: the console calls and the resulting Newcastle-Ottawa Scale traffic-light plot and stacked bar chart">
-        <p class="img-caption">A live R session using <code>plot_nos()</code> from <strong>critiplotR</strong> — the console calls (top) and the resulting traffic-light plot and stacked bar chart (bottom).</p>
-      <ul>
-        <li>Integrate Critiplot plots into R Markdown and Quarto documents</li>
-        <li>Automate figure generation across many assessments and datasets</li>
-        <li>Use the same frameworks and colour themes as the Python and interactive versions</li>
-        <li>Powered by the Python <code>critiplot</code> engine through <code>reticulate</code></li>
-      </ul>
-      <p>
-        For documentation and examples, visit the
-        <a href="https://critiplot.github.io/critiplotR/" target="_blank">critiplotR pkgdown website</a>
-        or the <a href="https://github.com/critiplot/critiplotR" target="_blank">GitHub repository</a>.
-      </p>
-    </section>
-     <section class="python-package">
-      <h3><i class="fab fa-python"></i> Python Package</h3>
-      <p>
-        Critiplot is also available as a Python package for local use. You can install it via pip:
-      </p>
-      <pre><code>pip install critiplot</code></pre>
-      <p>
-        Once installed, you can use Critiplot in your Python scripts to generate risk of bias and certainty of evidence visualizations programmatically.
-      </p>
-      <p>
-        Benefits of using the Python package:
-      </p>
-      <ul>
-        <li>Integrate Critiplot directly into your data analysis workflows</li>
-        <li>Automate visualization generation for large datasets</li>
-        <li>Customize plots with advanced parameters</li>
-        <li>Use Critiplot in Jupyter notebooks and other Python environments</li>
-      </ul>
-      <p>
-        For documentation and examples, visit the <a href="https://github.com/aurumz-rgb/Critiplot-Package" target="_blank">GitHub repository</a> or the <a href="https://pypi.org/project/critiplot/" target="_blank">PyPI page</a>.
+        <p class="img-caption">A live R session using <code>plot_nos()</code> from <strong>critiplotR</strong>: the console calls (top) and the resulting traffic-light plot and stacked bar chart (bottom).</p>
+        <ul>
+          <li>Integrate Critiplot plots into R Markdown and Quarto documents</li>
+          <li>Automate figure generation across many assessments and datasets</li>
+          <li>Use the same frameworks and colour themes as the Python and interactive versions</li>
+          <li>Powered by the Python <code>critiplot</code> engine through <code>reticulate</code></li>
+        </ul>
+        <p>
+          For documentation and examples, visit the
+          <a href="https://critiplot.github.io/critiplotR/" target="_blank">critiplotR pkgdown website</a>
+          or the <a href="https://github.com/critiplot/critiplotR" target="_blank">GitHub repository</a>.
+        </p>
+      </div>
+      <p class="package-note">
+        The R package is the official R interface to critiplot and uses the Python engine through
+        <code>reticulate</code>.
       </p>
     </section>
     <section class="citation">
@@ -802,6 +792,7 @@
   </div>
   <div class="footer-center">
     <a href="https://pypi.org/project/critiplot/" target="_blank"><i class="fab fa-python"></i> PyPI Package</a>
+    <a href="https://anaconda.org/conda-forge/critiplot" target="_blank"><i class="fas fa-cube"></i> conda-forge Package</a>
     <a href="https://critiplot.github.io/critiplotR/" target="_blank"><i class="fab fa-r-project"></i> critiplotR Package</a>
   </div>
   <div class="footer-right">
