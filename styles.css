@@ -521,17 +521,28 @@
     .r-package img {
       display: block;
       width: 100%;
-      max-width: 440px;
-      margin: 1.5rem auto;
+      max-width: 510px;
+      margin: 1.5rem 0;
       border-radius: 8px;
       box-shadow: var(--shadow-md);
     }
 
     .r-package .img-caption {
-      text-align: center;
+      max-width: 510px;
       color: var(--gray-color);
       font-size: 0.95rem;
       margin-top: -0.75rem;
+    }
+
+    .r-package a {
+      color: var(--accent-color);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .r-package a:hover {
+      color: var(--secondary-color);
+      text-decoration: underline;
     }
     
     .package-sep {
@@ -542,6 +553,10 @@
       margin-top: 1.25rem;
       font-size: 0.95rem;
       color: var(--gray-color);
+    }
+
+    .package-intro {
+      margin-top: 2.5rem;
     }
     
     @media (max-width: 768px) {
