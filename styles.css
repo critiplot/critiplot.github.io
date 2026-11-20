@@ -534,6 +534,10 @@
       margin-top: -0.75rem;
     }
     
+    .package-sep {
+      color: #cbd5e1;
+    }
+
     .package-note {
       margin-top: 1.25rem;
       font-size: 0.95rem;
