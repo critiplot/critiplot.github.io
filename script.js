@@ -20,12 +20,12 @@
   nextButton.addEventListener('click', () => moveCarousel('next'));
   
   const citations = {
-    apa: "Sahu, V. (2025). Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses (v2.1.1). Zenodo. https://doi.org/10.5281/zenodo.17236600",
-    vancouver: "Sahu V. Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses (v2.1.1). Zenodo; 2025. Available from: https://doi.org/10.5281/zenodo.17236600",
-    chicago: "Sahu, V. 2025. Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses (v2.1.1). Zenodo. https://doi.org/10.5281/zenodo.17236600",
-    harvard: "Sahu, V., 2025. Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses (v2.1.1). Zenodo. Available at: https://doi.org/10.5281/zenodo.17236600",
-    mla: "Sahu, Vihaan. \"Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses (v2.1.1).\" 2025, Zenodo, https://doi.org/10.5281/zenodo.17236600.",
-    ieee: "V. Sahu, \"Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses (v2.1.1),\" Zenodo, 2025. doi: 10.5281/zenodo.17236600."
+    apa: "Sahu, V. (2026). Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses (v2.1.1). Zenodo. https://doi.org/10.5281/zenodo.17236600",
+    vancouver: "Sahu V. Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses (v2.1.1). Zenodo; 2026. Available from: https://doi.org/10.5281/zenodo.17236600",
+    chicago: "Sahu, V. 2026. Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses (v2.1.1). Zenodo. https://doi.org/10.5281/zenodo.17236600",
+    harvard: "Sahu, V., 2026. Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses (v2.1.1). Zenodo. Available at: https://doi.org/10.5281/zenodo.17236600",
+    mla: "Sahu, Vihaan. \"Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses (v2.1.1).\" 2026, Zenodo, https://doi.org/10.5281/zenodo.17236600.",
+    ieee: "V. Sahu, \"Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses (v2.1.1),\" Zenodo, 2026. doi: 10.5281/zenodo.17236600."
   };
 
   const citationSelect = document.getElementById("citationType");
@@ -58,17 +58,17 @@
       content = `TY  - COMP
 T1  - Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses
 A1  - Sahu, Vihaan
-Y1  - 2025
+Y1  - 2026
 DO  - https://doi.org/10.5281/zenodo.17236600
 PB  - Zenodo
-PY  - 2025
+PY  - 2026
 ER  - `;
       filename += ".ris";
     } else if (format === 'bibtex') {
       content = `@software{critiplot,
   author = {Sahu, Vihaan},
   title = {{Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses}},
-  year = {2025},
+  year = {2026},
   version = {v2.1.1},
   publisher = {Zenodo},
   doi = {10.5281/zenodo.17236600},
