@@ -521,7 +521,7 @@
     .r-package img {
       display: block;
       width: 100%;
-      max-width: 920px;
+      max-width: 440px;
       margin: 1.5rem auto;
       border-radius: 8px;
       box-shadow: var(--shadow-md);
